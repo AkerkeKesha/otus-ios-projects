@@ -13,6 +13,7 @@
 		715986F2229EA42100367C2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 715986F0229EA42100367C2F /* LaunchScreen.storyboard */; };
 		715986FB229EAE9600367C2F /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 715986F9229EAE9600367C2F /* Detail.storyboard */; };
 		7159871D229EB5FA00367C2F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7159871C229EB5FA00367C2F /* DetailViewController.swift */; };
+		7159871F229EC22F00367C2F /* ColorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7159871E229EC22F00367C2F /* ColorButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		715986F3229EA42100367C2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		715986FA229EAE9600367C2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = AppFrame/Base.lproj/Detail.storyboard; sourceTree = "<group>"; };
 		7159871C229EB5FA00367C2F /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = ../../../learning/TabView/DemoTabView/DemoTabView/DetailViewController.swift; sourceTree = "<group>"; };
+		7159871E229EC22F00367C2F /* ColorButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				715986F9229EAE9600367C2F /* Detail.storyboard */,
 				715986E5229EA42000367C2F /* AppDelegate.swift */,
 				715986EB229EA42000367C2F /* Main.storyboard */,
+				7159871E229EC22F00367C2F /* ColorButton.swift */,
 				715986EE229EA42100367C2F /* Assets.xcassets */,
 				715986F0229EA42100367C2F /* LaunchScreen.storyboard */,
 				715986F3229EA42100367C2F /* Info.plist */,
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7159871F229EC22F00367C2F /* ColorButton.swift in Sources */,
 				715986E6229EA42000367C2F /* AppDelegate.swift in Sources */,
 				7159871D229EB5FA00367C2F /* DetailViewController.swift in Sources */,
 			);
