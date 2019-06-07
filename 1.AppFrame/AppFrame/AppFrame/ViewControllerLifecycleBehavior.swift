@@ -32,6 +32,7 @@ extension ViewControllerLifecycleBehavior {
   func afterLayingOutSubviews(_ viewController: UIViewController) {}
 }
 
+//MARK: - Hide Navigation Bar
 struct HideNavigationBarBehavior: ViewControllerLifecycleBehavior {
   func beforeAppearing(_ viewController: UIViewController) {
     viewController.navigationController?.setNavigationBarHidden(true, animated: true)
@@ -42,6 +43,22 @@ struct HideNavigationBarBehavior: ViewControllerLifecycleBehavior {
   }
 }
 
+//MARK: - Launch Timer
+struct LaunchTimerBehavior: ViewControllerLifecycleBehavior {
+    func afterAppearing(_ viewController: UIViewController) {
+//        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(runTimed), userInfo: nil, repeats: true)
+//        В runTimed сделайте принт, например так print(Date())
+    }
+    
+    func beforeDisappearing(_ viewController: UIViewController) {
+//  На beforeDisappearing вызвать таймеру invalidate() чтобы на других экранах он не тикал и не принтил
+    }
+}
+
+//MARK: - Change Background color and status Bar color
+struct ColorChangeBehavior: ViewControllerLifecycleBehavior {
+
+}
 
 extension UIViewController {
   /*
