@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7127B4EC22A912DD008F67EE /* ViewControllerLifecycleBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7127B4EB22A912DD008F67EE /* ViewControllerLifecycleBehavior.swift */; };
 		715986E6229EA42000367C2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715986E5229EA42000367C2F /* AppDelegate.swift */; };
 		715986ED229EA42000367C2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 715986EB229EA42000367C2F /* Main.storyboard */; };
 		715986EF229EA42100367C2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 715986EE229EA42100367C2F /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7127B4EB22A912DD008F67EE /* ViewControllerLifecycleBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerLifecycleBehavior.swift; sourceTree = "<group>"; };
 		715986E2229EA42000367C2F /* AppFrame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppFrame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		715986E5229EA42000367C2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		715986EC229EA42000367C2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -24,7 +26,7 @@
 		715986F1229EA42100367C2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		715986F3229EA42100367C2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		715986FA229EAE9600367C2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = AppFrame/Base.lproj/Detail.storyboard; sourceTree = "<group>"; };
-		7159871C229EB5FA00367C2F /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = ../../../learning/TabView/DemoTabView/DemoTabView/DetailViewController.swift; sourceTree = "<group>"; };
+		7159871C229EB5FA00367C2F /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		7159871E229EC22F00367C2F /* ColorButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,6 +65,7 @@
 				715986E5229EA42000367C2F /* AppDelegate.swift */,
 				715986EB229EA42000367C2F /* Main.storyboard */,
 				7159871E229EC22F00367C2F /* ColorButton.swift */,
+				7127B4EB22A912DD008F67EE /* ViewControllerLifecycleBehavior.swift */,
 				715986EE229EA42100367C2F /* Assets.xcassets */,
 				715986F0229EA42100367C2F /* LaunchScreen.storyboard */,
 				715986F3229EA42100367C2F /* Info.plist */,
@@ -145,6 +148,7 @@
 				7159871F229EC22F00367C2F /* ColorButton.swift in Sources */,
 				715986E6229EA42000367C2F /* AppDelegate.swift in Sources */,
 				7159871D229EB5FA00367C2F /* DetailViewController.swift in Sources */,
+				7127B4EC22A912DD008F67EE /* ViewControllerLifecycleBehavior.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
