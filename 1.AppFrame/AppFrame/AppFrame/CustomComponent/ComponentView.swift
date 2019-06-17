@@ -23,14 +23,14 @@ class ComponentView: UIView {
     }
     
     private func commonInit() {
-        let bundle = Bundle.main
-        let nib = bundle.loadNibNamed("ComponentView", owner: self, options: nil)
-        if let view = nib?[0] as? UIView
-        {
-            //self.view = view
-            addSubview(view)
-        }
-        
+//        let bundle = Bundle.main
+//        let nib = bundle.loadNibNamed("ComponentView", owner: self, options: nil)
+//        if let view = nib?[0] as? UIView
+//        {
+//            //self.view = view
+//            addSubview(view)
+//        }
+        print(#function)
     }
 
 }

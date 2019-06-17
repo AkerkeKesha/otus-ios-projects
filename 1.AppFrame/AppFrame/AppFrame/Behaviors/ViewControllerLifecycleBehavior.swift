@@ -33,30 +33,56 @@ extension ViewControllerLifecycleBehavior {
 }
 
 //MARK: - Hide Navigation Bar
-struct HideNavigationBarBehavior: ViewControllerLifecycleBehavior {
-  func beforeAppearing(_ viewController: UIViewController) {
-    viewController.navigationController?.setNavigationBarHidden(true, animated: true)
-  }
-
-  func beforeDisappearing(_ viewController: UIViewController) {
-    viewController.navigationController?.setNavigationBarHidden(false, animated: true)
-  }
-}
+//struct HideNavigationBarBehavior: ViewControllerLifecycleBehavior {
+//  func beforeAppearing(_ viewController: UIViewController) {
+//    viewController.navigationController?.setNavigationBarHidden(true, animated: true)
+//  }
+//
+//  func beforeDisappearing(_ viewController: UIViewController) {
+//    viewController.navigationController?.setNavigationBarHidden(false, animated: true)
+//  }
+//}
 
 //MARK: - Launch Timer
-struct LaunchTimerBehavior: ViewControllerLifecycleBehavior {
+class LaunchTimerBehavior: ViewControllerLifecycleBehavior {
+    
+    private var timer: Timer = Timer()
+    
     func afterAppearing(_ viewController: UIViewController) {
-//        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(runTimed), userInfo: nil, repeats: true)
-//        В runTimed сделайте принт, например так print(Date())
+        timer = Timer.scheduledTimer(
+                    timeInterval: 1,
+                    target: self,
+                    selector: #selector(runTimed),
+                    userInfo: nil,
+                    repeats: true)
+    }
+    
+    @objc func runTimed() {
+        print(Date())
     }
     
     func beforeDisappearing(_ viewController: UIViewController) {
-//  На beforeDisappearing вызвать таймеру invalidate() чтобы на других экранах он не тикал и не принтил
+        timer.invalidate()
     }
 }
 
 //MARK: - Change Background color and status Bar color
 struct ColorChangeBehavior: ViewControllerLifecycleBehavior {
+    
+    func beforeAppearing(_ viewController: UIViewController) {
+        print(#function)
+        UIApplication.shared.statusBarStyle = .lightContent
+        viewController.navigationController?.navigationBar.tintColor = .red
+        viewController.view.backgroundColor = .black
+        
+    }
+    
+    func beforeDisappearing(_ viewController: UIViewController) {
+        print(#function)
+        UIApplication.shared.statusBarStyle = .default
+        viewController.navigationController?.navigationBar.tintColor = .white
+        viewController.view.backgroundColor = .white
+    }
 
 }
 
