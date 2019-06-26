@@ -10,6 +10,7 @@
 		7127B4EC22A912DD008F67EE /* ViewControllerLifecycleBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7127B4EB22A912DD008F67EE /* ViewControllerLifecycleBehavior.swift */; };
 		7127B4EE22AA7239008F67EE /* ComponentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7127B4ED22AA7239008F67EE /* ComponentView.xib */; };
 		7127B4F022AA798A008F67EE /* ComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7127B4EF22AA798A008F67EE /* ComponentView.swift */; };
+		7135E3C422BA73140043028D /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7135E3C322BA73130043028D /* FeedViewController.swift */; };
 		7141808222AA98E8008ACA48 /* BenchmarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7141808122AA98E8008ACA48 /* BenchmarkViewController.swift */; };
 		7141808822AA9D2D008ACA48 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7141808722AA9D2D008ACA48 /* Profile.swift */; };
 		7141808B22AA9D86008ACA48 /* Benchmark.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7141808922AA9D86008ACA48 /* Benchmark.storyboard */; };
@@ -29,6 +30,7 @@
 		7127B4EB22A912DD008F67EE /* ViewControllerLifecycleBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerLifecycleBehavior.swift; sourceTree = "<group>"; };
 		7127B4ED22AA7239008F67EE /* ComponentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ComponentView.xib; sourceTree = "<group>"; };
 		7127B4EF22AA798A008F67EE /* ComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentView.swift; sourceTree = "<group>"; };
+		7135E3C322BA73130043028D /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		7141808122AA98E8008ACA48 /* BenchmarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenchmarkViewController.swift; sourceTree = "<group>"; };
 		7141808722AA9D2D008ACA48 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		7141808A22AA9D86008ACA48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = AppFrame/Base.lproj/Benchmark.storyboard; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 			children = (
 				7141808E22AA9DE7008ACA48 /* Feed.storyboard */,
 				7141809322B7D5C9008ACA48 /* ThirdFeedViewController.swift */,
+				7135E3C322BA73130043028D /* FeedViewController.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -222,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7159871F229EC22F00367C2F /* ColorButton.swift in Sources */,
+				7135E3C422BA73140043028D /* FeedViewController.swift in Sources */,
 				7127B4F022AA798A008F67EE /* ComponentView.swift in Sources */,
 				715986E6229EA42000367C2F /* AppDelegate.swift in Sources */,
 				7141808822AA9D2D008ACA48 /* Profile.swift in Sources */,
