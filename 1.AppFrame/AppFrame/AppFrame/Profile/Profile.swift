@@ -8,19 +8,24 @@
 
 import UIKit
 
-class Profile: UIViewController {
+class Profile: UIViewController, StatusBarConfigurable {
+    
+    var statusBarStyle: UIStatusBarStyle = .default
 
     override func viewDidLoad() {
         super.viewDidLoad()
         addBehaviors(behaviors: [ColorChangeBehavior()])
     }
+
     
-    //MARK: - Status Bar Changes
-//    override var prefersStatusBarHidden: Bool {
-//        return true
-//    }
-//    override var preferredStatusBarStyle: UIStatusBarStyle {
-//        return .lightContent
-//    }
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return statusBarStyle
+    }
 
 }
+
+
+
+    
+
+

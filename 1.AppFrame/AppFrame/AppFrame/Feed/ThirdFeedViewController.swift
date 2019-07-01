@@ -12,9 +12,6 @@ class ThirdFeedViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-        navigationController?.setNavigationBarHidden(true, animated: true)
     }
     
     @IBAction func toRoot(_ sender: UIButton) {

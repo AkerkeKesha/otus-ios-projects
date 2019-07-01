@@ -16,8 +16,8 @@ class FeedViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        addBehaviors(behaviors: [ShowNavigationBarBehavior()])
         dataProvider()
         self.tableView.dataSource = self
         self.tableView.delegate = self

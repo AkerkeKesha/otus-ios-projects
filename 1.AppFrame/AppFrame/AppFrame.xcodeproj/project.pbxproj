@@ -11,6 +11,11 @@
 		7127B4EE22AA7239008F67EE /* ComponentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7127B4ED22AA7239008F67EE /* ComponentView.xib */; };
 		7127B4F022AA798A008F67EE /* ComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7127B4EF22AA798A008F67EE /* ComponentView.swift */; };
 		7135E3C422BA73140043028D /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7135E3C322BA73130043028D /* FeedViewController.swift */; };
+		7137537922C65C1300A21E24 /* TimerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7137537822C65C1300A21E24 /* TimerCollectionViewCell.xib */; };
+		7137537B22C65C6500A21E24 /* TimerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7137537A22C65C6500A21E24 /* TimerCollectionViewCell.swift */; };
+		7137537D22CA34BB00A21E24 /* LaunchTimerBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7137537C22CA34BB00A21E24 /* LaunchTimerBehavior.swift */; };
+		7137537F22CA34D200A21E24 /* ColorChangeBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7137537E22CA34D200A21E24 /* ColorChangeBehavior.swift */; };
+		7137538122CA34ED00A21E24 /* NavigationbarHideBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7137538022CA34ED00A21E24 /* NavigationbarHideBehavior.swift */; };
 		7141808222AA98E8008ACA48 /* BenchmarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7141808122AA98E8008ACA48 /* BenchmarkViewController.swift */; };
 		7141808822AA9D2D008ACA48 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7141808722AA9D2D008ACA48 /* Profile.swift */; };
 		7141808B22AA9D86008ACA48 /* Benchmark.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7141808922AA9D86008ACA48 /* Benchmark.storyboard */; };
@@ -31,6 +36,11 @@
 		7127B4ED22AA7239008F67EE /* ComponentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ComponentView.xib; sourceTree = "<group>"; };
 		7127B4EF22AA798A008F67EE /* ComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentView.swift; sourceTree = "<group>"; };
 		7135E3C322BA73130043028D /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		7137537822C65C1300A21E24 /* TimerCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimerCollectionViewCell.xib; sourceTree = "<group>"; };
+		7137537A22C65C6500A21E24 /* TimerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerCollectionViewCell.swift; sourceTree = "<group>"; };
+		7137537C22CA34BB00A21E24 /* LaunchTimerBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchTimerBehavior.swift; sourceTree = "<group>"; };
+		7137537E22CA34D200A21E24 /* ColorChangeBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorChangeBehavior.swift; sourceTree = "<group>"; };
+		7137538022CA34ED00A21E24 /* NavigationbarHideBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationbarHideBehavior.swift; sourceTree = "<group>"; };
 		7141808122AA98E8008ACA48 /* BenchmarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenchmarkViewController.swift; sourceTree = "<group>"; };
 		7141808722AA9D2D008ACA48 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		7141808A22AA9D86008ACA48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = AppFrame/Base.lproj/Benchmark.storyboard; sourceTree = "<group>"; };
@@ -64,6 +74,8 @@
 			children = (
 				7141808922AA9D86008ACA48 /* Benchmark.storyboard */,
 				7141808122AA98E8008ACA48 /* BenchmarkViewController.swift */,
+				7137537822C65C1300A21E24 /* TimerCollectionViewCell.xib */,
+				7137537A22C65C6500A21E24 /* TimerCollectionViewCell.swift */,
 			);
 			path = Benchmark;
 			sourceTree = "<group>";
@@ -110,6 +122,9 @@
 			isa = PBXGroup;
 			children = (
 				7127B4EB22A912DD008F67EE /* ViewControllerLifecycleBehavior.swift */,
+				7137537C22CA34BB00A21E24 /* LaunchTimerBehavior.swift */,
+				7137537E22CA34D200A21E24 /* ColorChangeBehavior.swift */,
+				7137538022CA34ED00A21E24 /* NavigationbarHideBehavior.swift */,
 			);
 			path = Behaviors;
 			sourceTree = "<group>";
@@ -213,6 +228,7 @@
 				715986FB229EAE9600367C2F /* Detail.storyboard in Resources */,
 				7141808B22AA9D86008ACA48 /* Benchmark.storyboard in Resources */,
 				7141808D22AA9DB6008ACA48 /* Profile.storyboard in Resources */,
+				7137537922C65C1300A21E24 /* TimerCollectionViewCell.xib in Resources */,
 				7127B4EE22AA7239008F67EE /* ComponentView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,9 +240,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7137537B22C65C6500A21E24 /* TimerCollectionViewCell.swift in Sources */,
+				7137537D22CA34BB00A21E24 /* LaunchTimerBehavior.swift in Sources */,
+				7137538122CA34ED00A21E24 /* NavigationbarHideBehavior.swift in Sources */,
 				7159871F229EC22F00367C2F /* ColorButton.swift in Sources */,
 				7135E3C422BA73140043028D /* FeedViewController.swift in Sources */,
 				7127B4F022AA798A008F67EE /* ComponentView.swift in Sources */,
+				7137537F22CA34D200A21E24 /* ColorChangeBehavior.swift in Sources */,
 				715986E6229EA42000367C2F /* AppDelegate.swift in Sources */,
 				7141808822AA9D2D008ACA48 /* Profile.swift in Sources */,
 				7159871D229EB5FA00367C2F /* DetailViewController.swift in Sources */,
