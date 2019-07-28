@@ -12,21 +12,16 @@ class TimerCollectionViewCell: UICollectionViewCell {
     
     static let reuseID = String(describing: TimerCollectionViewCell.self)
     static let nib = UINib(nibName: String(describing: TimerCollectionViewCell.self), bundle: nil)
-    
-    @IBOutlet weak var stackView: UIStackView!
-    
+  
     @IBOutlet weak var timerLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        backgroundColor = .green
-        clipsToBounds = true
-        layer.cornerRadius = 4
-        timerLabel.font = UIFont.systemFont(ofSize: 30)
     }
     
-    func update(time: String) {
+    func update(time: String, color: UIColor) {
         timerLabel.text = time
+        backgroundColor = color
     }
 
     

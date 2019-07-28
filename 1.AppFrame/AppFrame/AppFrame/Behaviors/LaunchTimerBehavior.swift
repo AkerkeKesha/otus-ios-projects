@@ -14,12 +14,12 @@ class LaunchTimerBehavior: ViewControllerLifecycleBehavior {
     private var timer: Timer = Timer()
     
     func afterAppearing(_ viewController: UIViewController) {
-        timer = Timer.scheduledTimer(
-            timeInterval: 1,
-            target: self,
-            selector: #selector(runTimed),
-            userInfo: nil,
-            repeats: true)
+//        timer = Timer.scheduledTimer(
+//            timeInterval: 1,
+//            target: self,
+//            selector: #selector(runTimed),
+//            userInfo: nil,
+//            repeats: true)
     }
     
     @objc func runTimed() {
@@ -27,7 +27,7 @@ class LaunchTimerBehavior: ViewControllerLifecycleBehavior {
     }
     
     func beforeDisappearing(_ viewController: UIViewController) {
-        timer.invalidate()
+        //timer.invalidate()
     }
 }
 

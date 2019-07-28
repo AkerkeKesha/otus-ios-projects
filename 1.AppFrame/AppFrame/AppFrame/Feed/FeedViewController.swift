@@ -22,7 +22,6 @@ class FeedViewController: UIViewController {
         self.tableView.dataSource = self
         self.tableView.delegate = self
         
-        
     }
     
     func dataProvider() {
@@ -39,7 +38,6 @@ extension FeedViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let storyboard = UIStoryboard(name: "Feed", bundle: nil)
         let controller = storyboard.instantiateViewController(withIdentifier: "SessionSummaryVC")
-        //self.present(controller, animated: true, completion: nil)
         navigationController?.pushViewController(controller, animated: true)
         
     }
@@ -56,7 +54,6 @@ extension FeedViewController: UITableViewDataSource {
         
         let cell = UITableViewCell()
         cell.textLabel?.text = items[indexPath.row]
-
         return cell
 
     }
