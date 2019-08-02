@@ -11,7 +11,6 @@
 		7127B4EE22AA7239008F67EE /* ComponentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7127B4ED22AA7239008F67EE /* ComponentView.xib */; };
 		7127B4F022AA798A008F67EE /* ComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7127B4EF22AA798A008F67EE /* ComponentView.swift */; };
 		7135E3C422BA73140043028D /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7135E3C322BA73130043028D /* FeedViewController.swift */; };
-		7136F49B22D4DB560043AA87 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7136F49A22D4DB560043AA87 /* Images.xcassets */; };
 		7137537922C65C1300A21E24 /* TimerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7137537822C65C1300A21E24 /* TimerCollectionViewCell.xib */; };
 		7137537B22C65C6500A21E24 /* TimerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7137537A22C65C6500A21E24 /* TimerCollectionViewCell.swift */; };
 		7137537D22CA34BB00A21E24 /* LaunchTimerBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7137537C22CA34BB00A21E24 /* LaunchTimerBehavior.swift */; };
@@ -40,7 +39,6 @@
 		7127B4ED22AA7239008F67EE /* ComponentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ComponentView.xib; sourceTree = "<group>"; };
 		7127B4EF22AA798A008F67EE /* ComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentView.swift; sourceTree = "<group>"; };
 		7135E3C322BA73130043028D /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
-		7136F49A22D4DB560043AA87 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		7137537822C65C1300A21E24 /* TimerCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimerCollectionViewCell.xib; sourceTree = "<group>"; };
 		7137537A22C65C6500A21E24 /* TimerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerCollectionViewCell.swift; sourceTree = "<group>"; };
 		7137537C22CA34BB00A21E24 /* LaunchTimerBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchTimerBehavior.swift; sourceTree = "<group>"; };
@@ -169,7 +167,6 @@
 				715986EE229EA42100367C2F /* Assets.xcassets */,
 				715986F0229EA42100367C2F /* LaunchScreen.storyboard */,
 				715986F3229EA42100367C2F /* Info.plist */,
-				7136F49A22D4DB560043AA87 /* Images.xcassets */,
 			);
 			path = AppFrame;
 			sourceTree = "<group>";
@@ -250,7 +247,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				715986F2229EA42100367C2F /* LaunchScreen.storyboard in Resources */,
-				7136F49B22D4DB560043AA87 /* Images.xcassets in Resources */,
 				715986EF229EA42100367C2F /* Assets.xcassets in Resources */,
 				7141809022AA9DE7008ACA48 /* Feed.storyboard in Resources */,
 				715986ED229EA42000367C2F /* Main.storyboard in Resources */,
